@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Career Path colors
+				career: {
+					primary: '#6366f1',
+					secondary: '#8b5cf6',
+					accent: '#a78bfa',
+					light: '#c4b5fd',
+					bg: '#f5f3ff'
 				}
 			},
 			borderRadius: {
