@@ -20,10 +20,10 @@ const TestQuestion: React.FC<TestQuestionProps> = ({ question, selectedOption, o
         <RadioGroup
           value={selectedOption || ""}
           onValueChange={(value) => onSelect(question.id, value)}
-          className="space-y-3"
+          className="space-y-4"
         >
           {question.options.map((option) => (
-            <div key={option.id} className="flex items-start space-x-2">
+            <div key={option.id} className="flex items-start space-x-3 p-2 hover:bg-gray-50 rounded-md transition-colors">
               <RadioGroupItem 
                 value={option.id} 
                 id={`question-${question.id}-option-${option.id}`} 
